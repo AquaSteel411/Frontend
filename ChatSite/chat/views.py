@@ -7,7 +7,6 @@ from django.urls import reverse_lazy
 from django.utils.safestring import mark_safe
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView, DetailView
 from rest_framework import viewsets
-from rest_framework import permissions
 
 from .forms import RoomForm, UserChatForm
 from .serializers import ChatMessageSerializer, CustomRoomSerializer, UserSerializer
