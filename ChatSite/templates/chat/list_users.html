@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Users</title>
+</head>
+<body>
+<p><a href="{% url 'user_detail' user.pk %}" class="my_btn_create">Мой профиль</a></p>
+{% for user in list_users %}
+    <p>
+        <img src="{{ user.image_url}}" />
+        <a class="user-chat" href="#" methods="post">{{ user }}</a>
+    </p>
+{% endfor %}
+<script>
+    const loginUser = {{ login_user }};
+    const users = document.querySelectorAll('.user-chat');
+    users.forEach((item) => {
+
+        item.onclick = () => window.location.pathname = '/chat/list_room/' + item.text + loginUser + '/';
+    });
+</script>
+</body>
+</html>
