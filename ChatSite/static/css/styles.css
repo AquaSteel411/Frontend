@@ -1,0 +1,32 @@
+.my_btn_delete {
+    display: inline-block;
+    background: #FF0000;
+    color: #fff;
+    height:20px;
+    width:70px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center
+    }
+
+.my_btn_update {
+    display: inline-block;
+    background: #42aaff;
+    color: #fff;
+    height:20px;
+    width:110px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center
+    }
+
+.my_btn_create {
+    display: inline-block;
+    background: #32CD32;
+    color: #fff;
+    height:20px;
+    width:100px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center
+    }
