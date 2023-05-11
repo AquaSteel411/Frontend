@@ -1,7 +1,7 @@
 from django.urls import path
 
 from . import views
-from .views import CreateRoom, MyListRoom, ListUsers, DeleteRoom, UpdateRoom, UserDetail, UserChatUpdate
+from .views import CreateRoom, MyListRoom, ListUsers, DeleteRoom, UpdateRoom, UserDetail
 
 urlpatterns = [
     path('', views.index, name='index'),
